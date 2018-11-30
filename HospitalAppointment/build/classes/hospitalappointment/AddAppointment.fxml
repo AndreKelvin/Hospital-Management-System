@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitalappointment.AddAppointmentController">
+   <children>
+      <VBox prefHeight="365.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="19.0" prefWidth="600.0" styleClass="hbox">
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="ADD APPOINTMENT" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXComboBox fx:id="comboDoctor" labelFloat="true" prefHeight="25.0" prefWidth="200.0" promptText="Doctor Name">
+               <VBox.margin>
+                  <Insets left="200.0" top="20.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXComboBox>
+            <JFXComboBox fx:id="comboPatient" labelFloat="true" layoutX="210.0" layoutY="49.0" prefHeight="25.0" prefWidth="200.0" promptText="Patient Name">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets left="200.0" top="20.0" />
+               </VBox.margin>
+            </JFXComboBox>
+            <JFXDatePicker fx:id="datePicker" editable="false" prefHeight="25.0" prefWidth="200.0" promptText="Date">
+               <VBox.margin>
+                  <Insets left="200.0" top="20.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXDatePicker>
+            <JFXTimePicker fx:id="timePickerFrom" prefWidth="200.0" promptText="From">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets left="200.0" top="20.0" />
+               </VBox.margin>
+            </JFXTimePicker>
+            <JFXTimePicker fx:id="timePickerTo" layoutX="210.0" layoutY="184.0" prefWidth="200.0" promptText="To">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets left="200.0" top="20.0" />
+               </VBox.margin>
+            </JFXTimePicker>
+            <Label text="Status">
+               <VBox.margin>
+                  <Insets left="200.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <JFXCheckBox disable="true" selected="true" text="Pending">
+               <VBox.margin>
+                  <Insets left="200.0" top="5.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXCheckBox>
+            <BorderPane>
+               <center>
+                  <JFXButton onAction="#save" prefHeight="25.0" prefWidth="63.0" text="Save">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </center>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </BorderPane>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

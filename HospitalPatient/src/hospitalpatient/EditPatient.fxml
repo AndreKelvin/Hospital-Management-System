@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitalpatient.EditPatientController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox prefHeight="20.0" prefWidth="730.0" styleClass="hbox" VBox.vgrow="NEVER">
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="EDIT PATIENT" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <GridPane prefHeight="220.0" prefWidth="541.0" vgap="20.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="625.0" minWidth="10.0" prefWidth="265.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="362.0" minWidth="10.0" prefWidth="265.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="19.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <JFXTextField fx:id="textPatientName" labelFloat="true" promptText="Patient Name" GridPane.rowIndex="2" />
+                  <JFXDatePicker fx:id="date" editable="false" maxWidth="1.7976931348623157E308" promptText="Date Of Birth" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXDatePicker>
+                  <HBox prefHeight="33.0" prefWidth="217.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <JFXRadioButton fx:id="radioM" alignment="CENTER_LEFT" text="M">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tg" />
+                           </toggleGroup>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="radioF" text="F" toggleGroup="$tg">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXRadioButton>
+                     </children>
+                  </HBox>
+                  <JFXTextField fx:id="textPhone" labelFloat="true" layoutX="10.0" layoutY="263.0" promptText="Phone" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </JFXTextField>
+                  <HBox GridPane.rowIndex="5">
+                     <children>
+                        <JFXRadioButton fx:id="radioSingle" text="Single">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tg1" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="radioMar" text="Married" toggleGroup="$tg1">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="radioDiv" layoutX="155.0" layoutY="10.0" text="Divorce" toggleGroup="$tg1">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXRadioButton>
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </HBox>
+                  <JFXComboBox fx:id="comboPatientCat" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Patient Category" GridPane.rowIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXComboBox>
+                  <Label prefHeight="17.0" prefWidth="86.0" text="Gender :" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Marital Status :" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXDatePicker fx:id="admitDate" editable="false" layoutX="10.0" layoutY="125.0" maxWidth="1.7976931348623157E308" promptText="Admit Date" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </JFXDatePicker>
+               </children>
+            </GridPane>
+            <JFXTextField fx:id="textAddress" labelFloat="true" promptText="Address">
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <GridPane vgap="20.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <JFXTextField fx:id="textCity" labelFloat="true" promptText="City" />
+                  <JFXComboBox fx:id="comboDoctor" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Doctor" GridPane.rowIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXComboBox>
+                  <JFXTextField fx:id="textDiag" labelFloat="true" promptText="Diagnosis" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="comboBlood" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Blood Group" GridPane.columnIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </JFXComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" top="20.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox prefHeight="21.0" prefWidth="730.0" styleClass="hbox">
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="(IN PATIENT ONLY)" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <GridPane vgap="20.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <ComboBox fx:id="comboWard" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Ward" styleClass="jfx-combo-box" />
+                  <ComboBox fx:id="comboBed" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Bed" styleClass="jfx-combo-box" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="comboRoom" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Room" styleClass="jfx-combo-box" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="comboFloor" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Floor" styleClass="jfx-combo-box" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <center>
+                  <JFXButton onAction="#saveAction" prefHeight="25.0" prefWidth="100.0" text="Save" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </center>
+            </BorderPane>
+         </children>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </VBox>
+   </children>
+</StackPane>

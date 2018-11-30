@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01-Nov-2018, 20:03:00
+    Author     : Andre Kelvin
+*/
+
+.list-view:focused .list-cell:focused {
+    -fx-background-color: red;
+}
+
+.jfx-list-view:focused {
+    -fx-border-color: red;
+}
+
+.combo-box-popup .list-cell:filled:hover {
+    -fx-background-color: red;
+}
+
+.combo-box{
+    -jfx-focus-color: red;
+}
+
+.button{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color: white;
+    -fx-text-fill: red;
+    -fx-border-color: red;
+}
+
+.jfx-text-field{
+    -jfx-focus-color: red;
+}
+
+#hboxPatient{
+    -fx-background-color: red;
+    -fx-background-radius: 5;
+}
+
+.hbox{
+    -fx-background-color: red;
+}
+
+.jfx-date-picker{
+    -jfx-default-color: red;
+}
+
+.jfx-radio-button{
+    -jfx-selected-color: red;
+}

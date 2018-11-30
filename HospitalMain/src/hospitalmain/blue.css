@@ -1,0 +1,197 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09-Aug-2018, 21:44:16
+    Author     : Andre Kelvin
+*/
+
+.hbox{
+    -fx-background-color: blue;
+}
+
+.vbox{
+    -fx-background-color: blue;
+}
+
+.button{
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color: white;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+}
+
+.button:focused {
+    -fx-background-color: white;
+    -fx-border-color: blue;
+    -fx-text-fill: blue;
+    -fx-border-radius: 5;
+}
+
+.titled-pane > .title {
+    -fx-background-color: blue;
+}
+
+.titled-pane > .title > .arrow-button .arrow {
+    -fx-background-color: white;
+}
+
+.table-view:focused {
+    -fx-border-color: blue;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: blue;
+}
+
+.jfx-text-field{
+    -jfx-focus-color: blue;
+}
+
+.jfx-date-picker{
+    -jfx-default-color: blue;
+}
+
+.jfx-time-picker{
+    -jfx-default-color: blue;
+}
+
+.jfx-tab-pane .tab-header-area .tab-selected-line {
+    -fx-background-color: white;
+}
+
+.tab-header-background {
+    -fx-background-color: blue;
+}
+
+.default-color0.chart-bar {
+    -fx-bar-fill: blue;
+}
+
+.default-color1.chart-bar {
+    -fx-bar-fill: blue;
+}
+
+.default-color2.chart-bar {
+    -fx-bar-fill: blue;
+}
+
+.default-color3.chart-bar {
+    -fx-bar-fill: blue;
+}
+
+.default-color4.chart-bar {
+    -fx-bar-fill: blue;
+}
+
+.default-color5.chart-bar {
+    -fx-bar-fill: blue;
+}
+
+.default-color6.chart-bar {
+    -fx-bar-fill: blue;
+}
+
+.default-color7.chart-bar {
+    -fx-bar-fill: blue;
+}
+
+.list-view:focused .list-cell:focused {
+    -fx-background-color: blue;
+}
+
+.jfx-list-view:focused {
+    -fx-border-color: blue;
+}
+
+.combo-box-popup .list-cell:filled:hover {
+    -fx-background-color: blue;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: blue;
+}
+
+.combo-box{
+    -jfx-focus-color: blue;
+}
+
+#hboxPatient{
+    -fx-background-color: blue;
+    -fx-background-radius: 5;
+}
+
+.jfx-radio-button{
+    -jfx-selected-color: blue;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: blue;
+}
+
+.check-box:selected .box {
+    -fx-border-color: blue;
+}
+
+.check-list-view:focused {
+    -fx-border-color:blue;
+}
+
+.jfx-check-box {
+    -jfx-checked-color: blue;
+}
+
+.jfx-combo-box {
+    -jfx-focus-color: blue;
+    -jfx-unfocus-color: #4d4d4d;
+    -fx-prompt-text-fill: #4d4d4d;
+}
+
+.jfx-combo-box > .input-line {
+    -fx-background-color: -jfx-unfocus-color;
+    -fx-pref-height: 1px;
+    -fx-translate-y: 1px;
+}
+
+.jfx-combo-box > .input-focused-line {
+    -fx-background-color: -jfx-focus-color;
+    -fx-pref-height: 2px;
+}
+
+.jfx-combo-box,
+.jfx-combo-box:focused,
+.jfx-combo-box:editable,
+.jfx-combo-box:editable:focused {
+    -fx-background-color: TRANSPARENT, TRANSPARENT, TRANSPARENT, TRANSPARENT;
+    -fx-background-radius: 3px;
+    -fx-background-insets: 0px;
+}
+
+.jfx-combo-box .combo-box-button-container {
+    -fx-background-color: TRANSPARENT;
+}
+
+.jfx-combo-box > .arrow-button,
+.jfx-combo-box:editable > .arrow-button,
+.jfx-combo-box:editable:focused > .arrow-button {
+    -fx-background-color: TRANSPARENT;
+}
+
+.jfx-combo-box:error {
+    -jfx-focus-color: #D34336;
+    -jfx-unfocus-color: #D34336;
+}
+
+.jfx-combo-box .error-label {
+    -fx-text-fill: #D34336;
+}
+
+.jfx-combo-box .error-icon {
+    -fx-fill: #D34336;
+}

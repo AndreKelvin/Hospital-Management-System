@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" prefWidth="662.0" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitalmain.HospitalLoginController">
+   <children>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="284.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="42.0" prefWidth="600.0" styleClass="hbox">
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Login" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXTextField editable="false" labelFloat="true" promptText="Username" text="Admin">
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="50.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <StackPane>
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <JFXTextField fx:id="textUnMaskPassword" labelFloat="true" promptText="Password" />
+                  <JFXPasswordField fx:id="textPassword" labelFloat="true" promptText="Password" />
+               </children>
+            </StackPane>
+            <JFXCheckBox fx:id="checkBox" onAction="#showOrHidePassword" text="Show/Hide Password">
+               <VBox.margin>
+                  <Insets left="200.0" top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXCheckBox>
+            <JFXButton alignment="CENTER" maxWidth="1.7976931348623157E308" onAction="#login" prefHeight="31.0" prefWidth="100.0" text="Login">
+               <VBox.margin>
+                  <Insets left="250.0" right="250.0" top="20.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <HBox>
+               <VBox.margin>
+                  <Insets left="150.0" right="150.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="labelCreatePassword" maxWidth="1.7976931348623157E308" onMouseClicked="#openCreatePasswordDialog" text="Create Password">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="113.0" layoutY="10.0" maxWidth="1.7976931348623157E308" onMouseClicked="#openChangePasswordDialog" text="Change Password">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

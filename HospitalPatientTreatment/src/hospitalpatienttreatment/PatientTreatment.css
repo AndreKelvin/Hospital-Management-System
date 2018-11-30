@@ -1,0 +1,68 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-Sep-2018, 16:10:31
+    Author     : Andre Kelvin
+*/
+
+.hbox{
+    -fx-background-color: red;
+}
+
+.button{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color: white;
+    -fx-border-color: red;
+    -fx-text-fill: red;
+}
+
+.table-view:focused {
+    -fx-border-color: red;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: red;
+}
+
+.jfx-text-field{
+    -jfx-focus-color: red;
+}
+
+.combo-box-popup .list-cell:filled:hover {
+    -fx-background-color: red;
+}
+
+.combo-box{
+    -jfx-focus-color: red;
+}
+
+.list-view:focused .list-cell:focused {
+    -fx-background-color: red;
+}
+
+.jfx-list-view:focused {
+    -fx-border-color: red;
+}
+
+.list-view:focused {
+    -fx-border-color: red;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: red;
+}
+
+.check-box:selected .box {
+    -fx-border-color: red;
+}
+
+.check-list-view:focused {
+    -fx-border-color:red;
+}
