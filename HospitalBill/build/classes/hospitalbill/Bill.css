@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-Oct-2018, 13:27:46
+    Author     : Andre Kelvin
+*/
+
+/*#buttonCell:pressed{
+    -fx-rotation: 5;
+}*/
+
+.hbox{
+    -fx-background-color: red;
+}
+
+.vbox{
+    -fx-background-color: red;
+}
+
+.button{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color: white;
+    -fx-border-color: red;
+    -fx-text-fill: red;
+}
+
+.table-view:focused {
+    -fx-border-color: red;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: red;
+}
+
+.jfx-text-field{
+    -jfx-focus-color: red;
+}
+
+.combo-box-popup .list-cell:filled:hover {
+    -fx-background-color: red;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: red;
+}
+
+.combo-box{
+    -jfx-focus-color: red;
+}

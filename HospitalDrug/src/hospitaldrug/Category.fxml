@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="577.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitaldrug.CategoryController">
+   <children>
+      <HBox prefHeight="20.0" prefWidth="600.0" styleClass="hbox">
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DRUG CATEGORY" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox VBox.vgrow="ALWAYS">
+         <children>
+            <JFXListView fx:id="listView" prefHeight="380.0" prefWidth="169.0">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </JFXListView>
+         </children>
+      </VBox>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <JFXTextField fx:id="textCate">
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXButton onAction="#addAction" prefHeight="28.0" prefWidth="80.0" text="Add">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="145.0" top="10.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="buttonEdit" layoutX="10.0" layoutY="10.0" onAction="#editAction" prefHeight="28.0" prefWidth="80.0" text="Edit">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="buttonRemove" layoutX="60.0" layoutY="10.0" onAction="#removeAction" prefHeight="28.0" prefWidth="80.0" text="Remove">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

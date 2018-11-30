@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="183.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitaldepartment.EditDepartmentController">
+   <children>
+      <VBox prefHeight="174.0" prefWidth="589.0">
+         <children>
+            <HBox prefHeight="15.0" prefWidth="589.0" styleClass="hbox">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="564.0" text="EDIT DEPARTMENT" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXTextField fx:id="textDepart" labelFloat="true" layoutX="210.0" layoutY="30.0" prefHeight="25.0" prefWidth="543.0" promptText="Department Name" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets left="200.0" right="200.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextArea fx:id="textDescrip" labelFloat="true" prefHeight="37.0" prefWidth="189.0" promptText="Description" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets left="200.0" right="200.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextArea>
+                  <JFXButton onAction="#saveAction" prefHeight="25.0" prefWidth="63.0" text="Save" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets left="250.0" top="20.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

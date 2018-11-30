@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitaldeath.DeathCeritificateController">
+   <top>
+      <HBox prefHeight="5.0" prefWidth="600.0" styleClass="hbox" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <HBox prefHeight="5.0" prefWidth="600.0" styleClass="hbox" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <HBox prefHeight="380.0" prefWidth="5.0" styleClass="hbox" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <HBox prefHeight="380.0" prefWidth="5.0" styleClass="hbox" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <left>
+            <HBox prefHeight="390.0" prefWidth="2.0" styleClass="hbox" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="2.0" />
+               </BorderPane.margin>
+            </HBox>
+         </left>
+         <top>
+            <HBox prefHeight="2.0" prefWidth="590.0" styleClass="hbox" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="2.0" right="2.0" top="2.0" />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+         <right>
+            <HBox prefHeight="100.0" prefWidth="2.0" styleClass="hbox" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="2.0" />
+               </BorderPane.margin>
+            </HBox>
+         </right>
+         <bottom>
+            <HBox prefHeight="2.0" prefWidth="200.0" styleClass="hbox" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane>
+                     <center>
+                        <ImageView fx:id="imageView" fitHeight="129.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon/images.png" />
+                           </image>
+                        </ImageView>
+                     </center>
+                  </BorderPane>
+                  <HBox prefHeight="46.0" prefWidth="744.0">
+                     <children>
+                        <VBox maxWidth="1.7976931348623157E308" prefHeight="48.0" prefWidth="689.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="labelHosName" alignment="CENTER" maxWidth="1.7976931348623157E308" text="HOSPITAL NAME" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="labelAddress" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" text="ADDRESS">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="labelPhone" alignment="CENTER" layoutX="10.0" layoutY="27.0" maxWidth="1.7976931348623157E308" text="PHONE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <HBox>
+                                 <children>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="CERTIFICATE OF DEATH" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Andalus" size="35.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="This is to certify that">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="textPatientName" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="329.0">
+                     <VBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Passed away at">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="textHosName" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="329.0">
+                     <VBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <HBox prefHeight="27.0" prefWidth="241.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="on" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="textDate" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="71.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                        <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="at" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXTextField fx:id="textTime" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="58.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="2.0" right="2.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Gender">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="textGender" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="58.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="2.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <JFXTextField editable="false">
+                     <VBox.margin>
+                        <Insets left="500.0" right="2.0" top="50.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Sign">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="buttonPrint" onAction="#printCertificate" prefHeight="25.0" prefWidth="66.0" text="Print">
+                     <VBox.margin>
+                        <Insets left="2.0" top="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

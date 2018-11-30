@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="760.0" stylesheets="@Info.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitalinfo.HospitalInfoController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox prefHeight="24.0" prefWidth="760.0" styleClass="hbox">
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="HOSPITAL INFORMATION" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXTextField fx:id="textName" labelFloat="true" promptText="Name">
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="textAddress" labelFloat="true" layoutX="10.0" layoutY="37.0" promptText="Address">
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="textPhone" labelFloat="true" layoutX="10.0" layoutY="62.0" promptText="Phone">
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="textCountry" labelFloat="true" layoutX="10.0" layoutY="87.0" promptText="Country">
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <Label maxWidth="1.7976931348623157E308" text="Logo :">
+               <VBox.margin>
+                  <Insets left="200.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <BorderPane prefHeight="330.0" prefWidth="760.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <bottom>
+                  <JFXButton onAction="#save" prefHeight="33.0" prefWidth="169.0" text="Save" BorderPane.alignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <BorderPane.margin>
+                        <Insets bottom="5.0" />
+                     </BorderPane.margin>
+                  </JFXButton>
+               </bottom>
+               <center>
+                  <ImageView fx:id="imageView" fitHeight="267.0" fitWidth="323.0" onMouseClicked="#uploadLogo" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@icon/Caduceus-512.png" />
+                     </image>
+                  </ImageView>
+               </center>
+               <top>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Click On Image To Choose" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </top>
+            </BorderPane>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
